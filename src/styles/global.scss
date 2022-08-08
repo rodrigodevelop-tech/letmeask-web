@@ -1,0 +1,36 @@
+:root {
+  --white-background: #f8f8f8;
+  --details: #fefefe;
+  --white: #FFF;
+
+  --gray-light: #dbdcdd;
+  --gray-medium: #a8a8b3;
+  --gray-dark: #737380;
+  --gray-shadow: #050206;
+  --gray-black: #29292e;
+
+  --pink-dark: #e559f9;
+  --pink-light: #d67ee2;
+
+  --red: #ea4335;
+
+  --danger: #e73f5d;
+  --purple: #835afd;
+  --purple-light: #6f4bd8;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background:var(--white-background);
+  color: #29292E;
+}
+
+body, input, button, textarea {
+  font: 400 1rem 'Roboto', sans-serif;
+}
