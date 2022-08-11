@@ -1,6 +1,4 @@
 .button {
- 
-    margin-top: 3rem;
     padding: 0 2rem;
     height: 3.125rem;
     border-radius: 8px;
@@ -17,8 +15,20 @@
     cursor: pointer;
     border: 0;
 
+    &.outlined {
+      background: var(--white);
+      border: 1px solid var(--purple);
+      color: var(--purple);
+
+      transition: background-color 0.3s;
+      &:not(:disabled):hover {
+        background: var(--purple);
+        color: var(--white);
+      }
+    }
+
     transition: filter 0.2s;
-    &:not(:disabled):hover {
+    &:not(:disabled):not(.outlined):hover {
       filter: brightness(0.9);
     }
 
